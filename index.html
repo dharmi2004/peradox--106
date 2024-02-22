@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: lightpink;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .inner {
+            background-color: aliceblue;
+            max-width: 90%;
+            width: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        input,
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        .button {
+            width: 50%;
+            padding: 10px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .inner {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+   
+
+    <dic class="container">
+        <div class="inner">
+            <div class="img-holder">
+                <img src="https://media.istockphoto.com/id/898330254/photo/new-cartoon-face.jpg?s=612x612&w=0&k=20&c=qfANI1o27htRphZVh81oJc8X9Un1yBBNnI9ARxL6NNk="
+                    alt="img">
+            </div>
+            <form name="myform" action="index.html">
+                <h3> Registration Form</h3>
+
+                <div class="form-group">
+                    <input id="Fname" type="text " placeholder="First name " class="form-control" name="Fname" value="">
+                    <input id="lname" type="text " placeholder="Last name " class="form-control" name="lname" value="">
+                </div>
+               
+                <div class="form-wrapper">
+                    <input type="text" placeholder="email Address" class="form-control" name="email" value="" >
+                </div>
+                <div class="form-wrapper">
+                    <select  id="" class="form-control"  name="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+
+                    </select>
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" placeholder="password " class="form-control" name="password">
+
+                </div>
+                <div class="form-wrapper">
+                    <input type="password" placeholder=" confime password " class="form-control" name="Cpassword">
+
+                </div>
+                <input type="button" class="button" name="registration" value="Registration" onclick="submitForm()" return false>
+<br><br>
+<span>already registred ? <a href="signin.html">signIn</a></span>
+            </form>
+        </div>
+        </div>
+         <script src="signup.js"></script>
+</body>
+
+</html>
